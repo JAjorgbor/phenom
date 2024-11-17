@@ -12,13 +12,13 @@ export default function HomePage() {
   return (
     <main className="space-y-16">
       <Container className="">
-        <Card className="flex flex-col md:flex-row gap-5 items-center md:items-start">
+        <Card className="flex flex-col lg:flex-row gap-5 items-center lg:items-start">
           <Image
             src="/hero-image.jpg"
             alt="hero-image"
             width={500}
             height={500}
-            className="rounded-xl object-cover flex-1"
+            className="rounded-xl object-cover w flex-1"
           />
           <div className="space-y-3 flex-1 ">
             <h3 className="font-bold text-[2.5rem] text-purple-500">
@@ -74,8 +74,8 @@ export default function HomePage() {
         <Card className="flex items-center gap-3 mx-auto px-4 py-2 w-max">
           <FiClock /> Join Waitlist
         </Card>
-        <div className="flex flex-col md:flex-row gap-6  items-center md:items-stretch justify-center ">
-          <Card className="space-y-4 order-2 md:order-1">
+        <div className="flex flex-col lg:flex-row gap-6  items-center lg:items-stretch justify-center ">
+          <Card className="space-y-4 order-2 lg:order-1">
             <h3 className="font-bold text-[2.5rem] text-purple-500">
               Register Now!
             </h3>
@@ -99,7 +99,7 @@ export default function HomePage() {
             alt="hero-image"
             width={500}
             height={500}
-            className="rounded-3xl order-1 md:order-2 object-contain flex-1"
+            className="rounded-3xl order-1 lg:order-2 object-contain flex-1"
           />
         </div>
       </Container>

@@ -50,7 +50,7 @@ const RegisterModal: FC<Props> = ({
           more information on how{" "}
           <span className="text-purple-500">Phenom</span> works.
         </p>
-        <div className="flex gap-3 justify-center mt-4">
+        <div className="flex gap-3 justify-center mt-4 text-sm">
           <Link
             href="#"
             className="flex flex-col items-center gap-2 flex-1 group"
@@ -66,7 +66,7 @@ const RegisterModal: FC<Props> = ({
           </Link>
           <Link
             href="#"
-            className="flex flex-col items-center gap-2 flex-1 group"
+            className="flex flex-col items-center text-center gap-2 flex-1 group"
           >
             <Image
               src="/group-image.png"
@@ -88,7 +88,7 @@ const RegisterModal: FC<Props> = ({
               width={100}
               className="w-8"
             />
-            <p className="group-hover:text-purple-500">Whatsapp Channel</p>
+            <p className="group-hover:text-purple-500">Whatsapp </p>
           </Link>
         </div>
       </ModalWrapper>
