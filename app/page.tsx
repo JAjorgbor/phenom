@@ -5,7 +5,7 @@ import RegisterModal from "@/components/RegisterModal";
 import Image from "next/image";
 import Link from "next/link";
 import { FaEarthAfrica } from "react-icons/fa6";
-import { FiArrowRight, FiClock, FiMail } from "react-icons/fi";
+import { FiClock, FiMail } from "react-icons/fi";
 import { RiCoupon3Line } from "react-icons/ri";
 
 export default function HomePage() {
@@ -21,7 +21,7 @@ export default function HomePage() {
             className="rounded-xl object-cover w flex-1"
           />
           <div className="space-y-3 flex-1 ">
-            <h3 className="font-bold text-[2.5rem] text-purple-500">
+            <h3 className="font-bold text-3xl md:text-5xl text-purple-500">
               WHAT IS PHENOM?
             </h3>
             <div className="space-y-3">
@@ -76,23 +76,21 @@ export default function HomePage() {
         </Card>
         <div className="flex flex-col lg:flex-row gap-6  items-center lg:items-stretch justify-center ">
           <Card className="space-y-4 order-2 lg:order-1">
-            <h3 className="font-bold text-[2.5rem] text-purple-500">
+            <h3 className="font-bold text-3xl md:text-5xl text-purple-500">
               Register Now!
             </h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-              temporibus est atque, obcaecati voluptatem impedit molestiae
-              exercitationem, a error ullam, repudiandae aliquam corporis
-              asperiores tenetur veritatis harum dolorem? Natus, nostrum
-              accusamus. Magnam quos blanditiis natus.
+              Unlock your pathway to financial freedom by registering with
+              Phenom today. Join a global community where innovation meets
+              opportunity, and experience a platform designed to empower your
+              ambitions. Whether it&apos;s mining cryptocurrencies directly from
+              your phone, accessing top-notch digital courses, or monetizing
+              your social media for passive income, Phenom offers it all.
+              Register now to enjoy daily rewards, exclusive benefits, and a
+              seamless journey toward achieving your financial goals. Don&apos;t
+              just dream of a better future—create it with Phenom.
             </p>
-            <Link
-              href="#"
-              className="bg-white rounded-xl text-slate-950 px-3 py-2 inline-flex justify-center items-center gap-2"
-            >
-              Click here to Register
-              <FiArrowRight />
-            </Link>
+            <RegisterModal showButton buttonText="Click Here to Register" />
           </Card>
           <Image
             src="/promo-image.jpg"

@@ -9,12 +9,14 @@ interface Props {
   externalIsOpen?: boolean;
   setExternalIsOpen?: (state: boolean) => void;
   showButton?: boolean;
+  buttonText?: string;
 }
 
 const RegisterModal: FC<Props> = ({
   externalIsOpen = false,
   setExternalIsOpen,
   showButton = false,
+  buttonText = "Register",
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -24,7 +26,7 @@ const RegisterModal: FC<Props> = ({
           className="bg-purple-500 rounded-xl text-white px-3 py-2 inline-flex justify-center items-center gap-2 flex-1"
           onClick={() => setIsOpen(true)}
         >
-          Register
+          {buttonText}
           <FiArrowRight />
         </button>
       )}
@@ -38,7 +40,7 @@ const RegisterModal: FC<Props> = ({
           <span className="text-purple-500">Phenome</span> registration
         </p>
         <Link
-          href="#"
+          href="https://t.me/earnbigonphenom"
           target="_blank"
           className="bg-purple-500 rounded-xl text-white px-3 py-2 inline-flex justify-center items-center gap-2 flex-1"
         >
@@ -52,7 +54,7 @@ const RegisterModal: FC<Props> = ({
         </p>
         <div className="flex gap-3 justify-center mt-4 text-sm">
           <Link
-            href="#"
+            href="https://t.me/earnbigonphenom"
             className="flex flex-col items-center gap-2 flex-1 group"
           >
             <Image
@@ -65,7 +67,7 @@ const RegisterModal: FC<Props> = ({
             <p className="group-hover:text-purple-500">Telegram</p>
           </Link>
           <Link
-            href="#"
+            href="https://whatsapp.com/channel/0029Vavo4yOLo4hmQNoQAS0b"
             className="flex flex-col items-center text-center gap-2 flex-1 group"
           >
             <Image
@@ -78,7 +80,7 @@ const RegisterModal: FC<Props> = ({
             <p className="group-hover:text-purple-500">Whatsapp Channel</p>
           </Link>
           <Link
-            href="#"
+            href="https://wa.me/2347076159894"
             className="flex flex-col items-center gap-2 flex-1 group"
           >
             <Image
