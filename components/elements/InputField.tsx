@@ -389,6 +389,7 @@ const InputField: FC<InputFieldProps> = ({
               regions={["america", "europe", "asia", "oceania", "africa"]}
               enableSearch={true}
               disableSearchIcon={true}
+              dropdownClass="text-gray-800"
               inputProps={{
                 className: `${baseClass} pl-12`,
               }}
