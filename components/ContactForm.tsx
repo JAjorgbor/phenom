@@ -2,23 +2,32 @@
 import InputField from "@/components/elements/InputField";
 import React from "react";
 import { useForm } from "react-hook-form";
+import { FiSend } from "react-icons/fi";
 
 interface FormFields {
-  subject: string;
   firstName: string;
   lastName: string;
   email: string;
-  phoneNumber: string;
-  entityName?: string;
-  message: string;
-  rememberMe: boolean;
+  phoneNumber?: string;
 }
 
 const ContactForm = () => {
   const formMethods = useForm<FormFields>();
 
   const handleSubmit = (data: FormFields) => {
-    console.log(data);
+    const { firstName, lastName, email, phoneNumber } = data;
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
+      `Contact Request from ${firstName} ${lastName}`
+    )}&body=${encodeURIComponent(
+      `Hello,\n\nHere are the details of the contact request:\n\n` +
+        `Name: ${firstName} ${lastName}\n` +
+        `Email: ${email}\n` +
+        `Phone Number: ${phoneNumber}\n\n` +
+        `Best regards,`
+    )}`;
+
+    // Open the mailto link
+    window.location.href = mailtoLink;
   };
   return (
     <form onSubmit={formMethods.handleSubmit(handleSubmit)} className="">
@@ -31,6 +40,7 @@ const ContactForm = () => {
           type="text"
           label="First Name"
           placeholder="John"
+          isName
           errorMessage={formMethods.formState.errors.firstName?.message}
           register={formMethods.register("firstName", {
             required: "First name is required",
@@ -40,6 +50,7 @@ const ContactForm = () => {
         <InputField
           type="text"
           placeholder="Doe"
+          isName
           label="Last Name"
           isRequired
           errorMessage={formMethods.formState.errors.lastName?.message}
@@ -61,37 +72,17 @@ const ContactForm = () => {
           type="phoneNumber"
           label="Phone Number"
           errorMessage={formMethods.formState.errors.phoneNumber?.message}
-          register={formMethods.register("phoneNumber", {
-            required: "Phone number is required",
-          })}
-          isRequired
-        />
-        <InputField
-          type="textarea"
-          label="Message"
-          errorMessage={formMethods.formState.errors.message?.message}
-          register={formMethods.register("message", {
-            required: "Message is required",
-          })}
-          className="md:col-span-2"
-          isRequired
-          placeholder="Enter message"
+          register={formMethods.register("phoneNumber")}
         />
       </div>
 
       <div className="mt-6 grid">
         <button
           type="submit"
-          className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg bg-purple-500 text-white  focus:outline-none disabled:opacity-50"
+          className="w-full flex gap-3 py-3 px-4 justify-center items-center gap-x-2 text-sm font-medium rounded-xl bg-purple-500 text-white  focus:outline-none disabled:opacity-50"
         >
-          Submit
+          Submit <FiSend size={16} />
         </button>
-      </div>
-
-      <div className="mt-3 text-center">
-        <p className="text-sm text-gray-500">
-          We&apos;ll get back to you in 1-2 business days.
-        </p>
       </div>
     </form>
   );

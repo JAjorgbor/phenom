@@ -128,7 +128,7 @@ const InputField: FC<InputFieldProps> = ({
   const listBoxButtonRef = useRef<any>(null);
   const comboBoxButtonRef = useRef<any>(null);
 
-  const baseClass = `w-full p-3 block text-nevada w-full rounded-lg !outline-[0.5px] outline-gray-700 focus:outline-purple-500 ${
+  const baseClass = `w-full p-3 block text-nevada w-full rounded-xl !outline-[0.5px] outline-gray-700 focus:outline-purple-500 ${
     startContent ? "rounded-l-none outline-purple-500 outline-l-none" : ""
   } ${endContent ? "rounded-r-none outline-purple-500 outline-r-none" : ""}  ${
     !!errorMessage
@@ -248,7 +248,7 @@ const InputField: FC<InputFieldProps> = ({
             >
               <ListboxButton
                 disabled={disabled}
-                className="group relative border flex justify-between items-center w-full focus:border-purple-500 rounded-lg p-2"
+                className="group relative border flex justify-between items-center w-full focus:border-purple-500 rounded-xl p-2"
                 ref={listBoxButtonRef}
               >
                 {options?.find((each) => each.value == value)?.label ||
@@ -257,7 +257,7 @@ const InputField: FC<InputFieldProps> = ({
               </ListboxButton>
               <ListboxOptions
                 anchor="bottom"
-                className={`bg-transparent border transform translate-y-1 border-purple-500 rounded-lg [--anchor-gap:var(--spacing-1)] focus:outline-none transition duration-100 ease-in data-[leave]:data-[closed]:opacity-0 `}
+                className={`bg-transparent border transform translate-y-1 border-purple-500 rounded-xl [--anchor-gap:var(--spacing-1)] focus:outline-none transition duration-100 ease-in data-[leave]:data-[closed]:opacity-0 `}
                 style={{
                   width: `${
                     listBoxButtonRef.current?.offsetWidth + "px" || ""
@@ -268,7 +268,7 @@ const InputField: FC<InputFieldProps> = ({
                   <ListboxOption
                     disabled
                     value=""
-                    className="group flex items-center gap-2 rounded-lg py-1.5 px-3 bg-transparent select-none data-[focus]:bg-purple-500 data-[focus]:text-white hover:bg-purple-500 hover:text-white cursor-pointer"
+                    className="group flex items-center gap-2 rounded-xl py-1.5 px-3 bg-transparent select-none data-[focus]:bg-purple-500 data-[focus]:text-white hover:bg-purple-500 hover:text-white cursor-pointer"
                   >
                     <FiCheck className="invisible size-4 group-data-[selected]:visible" />
                     <div className="text-sm/6 ">{placeholder}</div>
@@ -278,7 +278,7 @@ const InputField: FC<InputFieldProps> = ({
                   <ListboxOption
                     key={item.value}
                     value={item}
-                    className="group flex items-center gap-2 rounded-lg py-1.5 px-3 bg-transparent select-none data-[focus]:bg-purple-500 data-[focus]:text-white hover:bg-purple-500 hover:text-white cursor-pointer"
+                    className="group flex items-center gap-2 rounded-xl py-1.5 px-3 bg-transparent select-none data-[focus]:bg-purple-500 data-[focus]:text-white hover:bg-purple-500 hover:text-white cursor-pointer"
                   >
                     <FiCheck className="invisible size-4 group-data-[selected]:visible" />
                     <div className="text-sm/6 ">{item.label}</div>
@@ -293,7 +293,7 @@ const InputField: FC<InputFieldProps> = ({
           <>
             <Combobox value={value} onChange={onChange}>
               <div
-                className="relative border focus:border-purple-500 rounded-lg p-2 w-full"
+                className="relative border focus:border-purple-500 rounded-xl p-2 w-full"
                 tabIndex={-1}
                 ref={comboBoxButtonRef}
               >
@@ -310,14 +310,14 @@ const InputField: FC<InputFieldProps> = ({
               </div>
               <ComboboxOptions
                 anchor="bottom"
-                className="bg-transparent border border-purple-500 rounded-lg [--anchor-gap:var(--spacing-1)] focus:outline-none transition duration-100 ease-in data-[leave]:data-[closed]:opacity-0 w-inherit "
+                className="bg-transparent border border-purple-500 rounded-xl [--anchor-gap:var(--spacing-1)] focus:outline-none transition duration-100 ease-in data-[leave]:data-[closed]:opacity-0 w-inherit "
                 style={{ width: comboBoxButtonRef.current?.offsetWidth + "px" }}
               >
                 {filteredOptions?.map((item) => (
                   <ComboboxOption
                     key={item.value}
                     value={item.value}
-                    className="group flex items-center gap-2 rounded-lg py-1.5 px-3 bg-transparent select-none data-[focus]:bg-purple-500 data-[focus]:text-white hover:bg-purple-500 hover:text-white cursor-pointer"
+                    className="group flex items-center gap-2 rounded-xl py-1.5 px-3 bg-transparent select-none data-[focus]:bg-purple-500 data-[focus]:text-white hover:bg-purple-500 hover:text-white cursor-pointer"
                   >
                     <FiCheck className="invisible size-4 group-data-[selected]:visible" />
                     <div className="text-sm/6 ">{item.label}</div>
@@ -496,13 +496,11 @@ const InputField: FC<InputFieldProps> = ({
         type == "switch" ||
         renderLabelRight ? (
           <p className={`order-2 text-purple-500 ${classNames.label}`}>
-            {label}{" "}
-            {isRequired && <span className="text-red-700 text-xl">*</span>}
+            {label} {isRequired && <span className="text-red-700">*</span>}
           </p>
         ) : renderLabelLeft ? (
           <p className={`order-1 text-purple-500 ${classNames.label}`}>
-            {label}{" "}
-            {isRequired && <span className="text-red-700 text-xl">*</span>}
+            {label} {isRequired && <span className="text-red-700">*</span>}
           </p>
         ) : (
           <p>
