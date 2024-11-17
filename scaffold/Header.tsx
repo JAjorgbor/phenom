@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className=" sticky top-0 bg-slate-950 z-50">
       <Container className="flex justify-between py-2">
-        <Link href="#">
+        <Link href="/">
           <Image
             src="/logo.png"
             alt="Phenom logo"
