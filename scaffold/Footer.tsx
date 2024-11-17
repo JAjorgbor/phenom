@@ -2,8 +2,8 @@ import Card from "@/components/elements/Card";
 import Container from "@/components/elements/Container";
 import Image from "next/image";
 import Link from "next/link";
-import { FaInstagram, FaTelegramPlane, FaTiktok } from "react-icons/fa";
-import { FaWhatsapp, FaXTwitter } from "react-icons/fa6";
+import { FaTelegramPlane } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa6";
 
 const Footer = ({}) => {
   return (
@@ -42,21 +42,6 @@ const Footer = ({}) => {
             <Link href="https://t.me/earnbigonphenom" className="group">
               <Card className="p-2 !px-2 rounded-xl group-hover:bg-purple-500 transition-all duration-150 group-hover:rounded-full">
                 <FaTelegramPlane size={23} />
-              </Card>
-            </Link>
-            <Link href="#" className="group">
-              <Card className="p-2 !px-2 rounded-xl group-hover:bg-purple-500 transition-all duration-150 group-hover:rounded-full">
-                <FaTiktok size={23} />
-              </Card>
-            </Link>
-            <Link href="#" className="group">
-              <Card className="p-2 !px-2 rounded-xl group-hover:bg-purple-500 transition-all duration-150 group-hover:rounded-full">
-                <FaInstagram size={23} />
-              </Card>
-            </Link>
-            <Link href="#" className="group">
-              <Card className="p-2 !px-2 rounded-xl group-hover:bg-purple-500 transition-all duration-150 group-hover:rounded-full">
-                <FaXTwitter size={23} />
               </Card>
             </Link>
           </div>
