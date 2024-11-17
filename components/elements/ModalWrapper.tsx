@@ -32,7 +32,7 @@ const ModalWrapper: FC<ModalWrapperProps & BaseModalProps> = ({
     >
       <div className="fixed top-0 left-0 w-screen h-screen bg-white/10 backdrop-blur " />
       <div className="fixed inset-0 flex w-screen items-center justify-center ">
-        <DialogPanel className="max-w-lg z-50 shadow-lg  overflow-hidden">
+        <DialogPanel className="max-w-lg z-50 shadow-lg  overflow-hidden mx-4">
           <Card className="!p-5 space-y-4">
             <DialogTitle className="font-bold flex gap-3">
               <h3 className="text-xl flex-grow">{title}</h3>

@@ -41,12 +41,12 @@ export default function HomePage() {
                 your home and pathway to financial freedom, where we empower you
                 to embrace a life of abundance and opportunity.
               </p>
-              <div className="flex gap-3">
+              <div className="flex flex-wrap gap-3">
                 <Link
                   href="https://wa.me/2347076159894?text=Hello I am interested in getting a coupon code for Phenom"
                   className="bg-transparent border border-purple-500 rounded-xl text-purple-500 px-3 py-2 inline-flex justify-center items-center gap-2 flex-1 transition-colors hover:bg-purple-500 hover:text-white"
                 >
-                  Get Coupon Code
+                  Get Coupon
                   <RiCoupon3Line />
                 </Link>
 
