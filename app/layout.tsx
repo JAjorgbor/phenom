@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     creator: "@phenom",
     description:
       "PHENOM is a global platform empowering users with limitless financial opportunities, from mobile cryptocurrency mining to monetizing social media for passive income. Explore cutting-edge digital courses and advanced earning models offering daily rewards. Join PHENOM to achieve financial freedom and embrace a life of abundance.",
-    images: ["/public/promo-image.jpg"],
+    images: ["/promo-image.jpg"],
   },
   openGraph: {
     title: {
@@ -49,9 +49,9 @@ export const metadata: Metadata = {
       },
     ],
   },
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_APP_BASE_URL || "https://localhost:3000"
-  ),
+  // metadataBase: new URL(
+  //   process.env.NEXT_PUBLIC_APP_BASE_URL || "https://localhost:3000"
+  // ),
 };
 
 export default function RootLayout({
