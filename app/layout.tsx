@@ -33,6 +33,10 @@ export const metadata: Metadata = {
       "PHENOM is a global platform empowering users with limitless financial opportunities, from mobile cryptocurrency mining to monetizing social media for passive income. Explore cutting-edge digital courses and advanced earning models offering daily rewards. Join PHENOM to achieve financial freedom and embrace a life of abundance.",
     images: ["/promo-image.jpg"],
   },
+
+  other: {
+    "google-site-verification": "sqsJwdYR5ZIcNWbO7-ebNMCFDOzPgyn4NnaktgI7rWM",
+  },
   openGraph: {
     title: {
       template: "%s — Phenom",

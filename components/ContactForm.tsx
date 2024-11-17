@@ -1,8 +1,10 @@
 "use client";
 import InputField from "@/components/elements/InputField";
+import Link from "next/link";
 import React from "react";
 import { useForm } from "react-hook-form";
 import { FiSend } from "react-icons/fi";
+import { RiCoupon3Line } from "react-icons/ri";
 
 interface FormFields {
   firstName: string;
@@ -74,12 +76,16 @@ const ContactForm = () => {
           errorMessage={formMethods.formState.errors.phoneNumber?.message}
           register={formMethods.register("phoneNumber")}
         />
-      </div>
-
-      <div className="mt-6 grid">
+        <Link
+          href="https://wa.me/2347076159894?text=Hello I am interested in getting a coupon code for Phenom"
+          className="bg-transparent border border-purple-500 rounded-xl text-purple-500 px-3 py-2 inline-flex justify-center items-center gap-2 flex-1 transition-colors hover:bg-purple-500 hover:text-white"
+        >
+          Get Coupon
+          <RiCoupon3Line />
+        </Link>
         <button
           type="submit"
-          className="w-full flex gap-3 py-3 px-4 justify-center items-center gap-x-2 text-sm font-medium rounded-xl bg-purple-500 text-white  focus:outline-none disabled:opacity-50"
+          className="w-full flex flex-1 gap-3 py-3 px-4 justify-center items-center gap-x-2 text-sm font-medium rounded-xl bg-purple-500 text-white  focus:outline-none disabled:opacity-50"
         >
           Submit <FiSend size={16} />
         </button>

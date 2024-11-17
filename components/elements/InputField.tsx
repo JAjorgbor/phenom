@@ -385,7 +385,7 @@ const InputField: FC<InputFieldProps> = ({
             <PhoneNumberInput
               disabled={disabled}
               country={"ng"}
-              buttonClass="select-country-code-button !bg-white"
+              buttonClass="select-country-code-button !bg-white !rounded-l-lg"
               regions={["america", "europe", "asia", "oceania", "africa"]}
               enableSearch={true}
               disableSearchIcon={true}
@@ -507,7 +507,7 @@ const InputField: FC<InputFieldProps> = ({
             <span className={`text-purple-500 ${classNames.label}`}>
               {label}
             </span>
-            {isRequired && <span className="text-red-700 text-xl">*</span>}
+            {isRequired && <span className="text-red-700">*</span>}
           </p>
         )}
         <div className={type !== "passCode" ? "flex" : ""}>
