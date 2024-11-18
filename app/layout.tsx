@@ -37,6 +37,8 @@ export const metadata: Metadata = {
   other: {
     "google-site-verification": "sqsJwdYR5ZIcNWbO7-ebNMCFDOzPgyn4NnaktgI7rWM",
   },
+  keywords:
+    "financial freedom, cryptocurrency mining, passive income, social media monetization, digital learning, advanced earning models, daily rewards, Phenom platform, phenom",
   openGraph: {
     title: {
       template: "%s — Phenom",
