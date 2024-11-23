@@ -45,7 +45,7 @@ export const metadata: Metadata = {
       default: "Phenom",
     },
     description:
-      "PHENOM is a global platform empowering users with limitless financial opportunities, from mobile cryptocurrency mining to monetizing social media for passive income. Explore cutting-edge digital courses and advanced earning models offering daily rewards. Join PHENOM to achieve financial freedom and embrace a life of abundance.",
+      "Phenom is a global platform empowering users with limitless financial opportunities, from mobile cryptocurrency mining to monetizing social media for passive income. Explore cutting-edge digital courses and advanced earning models offering daily rewards. Join PHENOM to achieve financial freedom and embrace a life of abundance.",
     images: [
       {
         url: "/promo-image.jpg",

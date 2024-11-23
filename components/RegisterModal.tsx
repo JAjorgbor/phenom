@@ -67,20 +67,7 @@ const RegisterModal: FC<Props> = ({
             <p className="group-hover:text-purple-500">Telegram</p>
           </Link>
           <Link
-            href="https://whatsapp.com/channel/0029Vavo4yOLo4hmQNoQAS0b"
-            className="flex flex-col items-center text-center gap-2 flex-1 group"
-          >
-            <Image
-              src="/group-image.png"
-              alt="whatsapp logo"
-              height={100}
-              width={100}
-              className="w-8"
-            />
-            <p className="group-hover:text-purple-500">Whatsapp Channel</p>
-          </Link>
-          <Link
-            href="https://wa.me/2347076159894"
+            href="https://Wa.me/+2348104124886?text=Hello!%20Coach%20I'm%20Ready%20To%20Pay%20For%20Phenom%20Registration%20Fee.%20"
             className="flex flex-col items-center gap-2 flex-1 group"
           >
             <Image

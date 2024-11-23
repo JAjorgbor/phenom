@@ -35,7 +35,7 @@ const ModalWrapper: FC<ModalWrapperProps & BaseModalProps> = ({
         <DialogPanel className="max-w-lg z-50 shadow-lg  overflow-hidden mx-4">
           <Card className="!p-5 space-y-4">
             <DialogTitle className="font-bold flex gap-3">
-              <h3 className="text-xl flex-grow">{title}</h3>
+              <span className="text-xl flex-grow">{title}</span>
               <button
                 onClick={() => setIsOpen(false)}
                 className="bg-white rounded-full p-1 px-1.5 text-gray-950"

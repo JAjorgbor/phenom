@@ -31,7 +31,7 @@ const Footer = ({}) => {
           <p className="">Connect With Us</p>
           <div className="flex gap-3">
             <Link
-              href="https://whatsapp.com/channel/0029Vavo4yOLo4hmQNoQAS0b"
+              href="https://Wa.me/+2348104124886?text=Hello!%20Coach%20I'm%20Ready%20To%20Pay%20For%20Phenom%20Registration%20Fee.%20"
               target="_blank"
               className="group"
             >
