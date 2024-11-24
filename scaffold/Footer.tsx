@@ -39,7 +39,10 @@ const Footer = ({}) => {
                 <FaWhatsapp size={23} />
               </Card>
             </Link>
-            <Link href="https://t.me/earnbigonphenom" className="group">
+            <Link
+              href="https://t.me/Voicemedia2?text=HELLO+OFFICIAL+I+WANT+TO+PURCHASE+PHENOM+COUPON+CODE"
+              className="group"
+            >
               <Card className="p-2 !px-2 rounded-xl group-hover:bg-purple-500 transition-all duration-150 group-hover:rounded-full">
                 <FaTelegramPlane size={23} />
               </Card>

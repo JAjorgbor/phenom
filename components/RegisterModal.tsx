@@ -54,7 +54,7 @@ const RegisterModal: FC<Props> = ({
         </p>
         <div className="flex gap-3 justify-center mt-4 text-sm">
           <Link
-            href="https://t.me/earnbigonphenom"
+            href="https://t.me/Voicemedia2?text=HELLO+OFFICIAL+I+WANT+TO+PURCHASE+PHENOM+COUPON+CODE"
             className="flex flex-col items-center gap-2 flex-1 group"
           >
             <Image
