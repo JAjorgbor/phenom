@@ -26,7 +26,7 @@ export default function HomePage() {
             </h3>
             <div className="space-y-3">
               <p>
-                <span className="text-purple-500">Phenom</span> is a diverse,
+                <span className="text-purple-500">PHENOM</span> is a diverse,
                 inclusive, and globally integrated system designed to connect
                 you with limitless access to extensive financial opportunities
                 and aesthetics. Its mission is to create and foster a wide range

@@ -20,13 +20,13 @@ const Header = () => {
             className=" w-[7rem]"
           />
         </Link>
-        <button
-          onClick={() => setOpenRegisterModal(true)}
+        <Link
+          href="/register"
           className="bg-white rounded-xl text-slate-950 px-3 py-2 flex justify-center items-center gap-2"
         >
           <FiUserPlus />
           Register
-        </button>
+        </Link>
         <RegisterModal
           externalIsOpen={openRegisterModal}
           setExternalIsOpen={setOpenRegisterModal}
