@@ -11,7 +11,7 @@ const RegisterForm = () => {
   const formMethods = useForm();
   const [step, setStep] = useState(0);
   return (
-    <Card className="mt-[20%]">
+    <Card className="mt-[20%] p-3">
       <div className="flex flex-col gap-3 justify-center items-center">
         <Link href="/">
           <Image
@@ -23,7 +23,7 @@ const RegisterForm = () => {
           />
         </Link>
         <h3 className="text-3xl font-bold">Create Account</h3>
-        <form className="w-full space-y-3">
+        <form className="w-full space-y-4">
           {(() => {
             switch (step) {
               case 0:
@@ -105,6 +105,14 @@ const RegisterForm = () => {
                       placeholder="jes23"
                       register={formMethods.register("confirmPassword")}
                     />
+                    <InputField
+                      type="checkbox"
+                      label="Accept terms and conditions"
+                      value={formMethods.watch("termsAndConditions")}
+                      onChange={(value) =>
+                        formMethods.setValue("termsAndConditions", value)
+                      }
+                    />
                   </>
                 );
             }
@@ -128,6 +136,17 @@ const RegisterForm = () => {
               Continue <FiArrowRight size={16} />
             </button>
           </div>
+          {step == 2 && (
+            <p className="text-center mt-3">
+              Don&apos;t have a code?{" "}
+              <Link
+                href="https://Wa.me/+2347010138034?text=Hello!%20PHENOM%20OFFICIAL%20I'M%20READY%20TO%20GET%20REGISTERED%20ON%20PHENOM%20"
+                className="text-purple-500 font-bold "
+              >
+                Get a Code
+              </Link>
+            </p>
+          )}
         </form>
       </div>
     </Card>

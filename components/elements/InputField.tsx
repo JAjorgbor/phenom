@@ -131,7 +131,7 @@ const InputField: FC<InputFieldProps> = ({
   } ${endContent ? "rounded-r-none  outline-r-none" : ""}  ${
     !!errorMessage
       ? "!bg-red-100 outline-red-500"
-      : " !bg-transparent focus:!bg-transparent outline focus:!outline-secondary "
+      : " !bg-transparent focus:!bg-transparent outline focus:!outline-purple-500 "
   } ${classNames.input} ${disabled ? "cursor-not-allowed" : ""}`;
 
   const renderInput = () => {
@@ -329,7 +329,7 @@ const InputField: FC<InputFieldProps> = ({
         return (
           <Checkbox
             defaultChecked={defaultChecked}
-            className="p-0.5 rounded-md border cursor-pointer text-white data-[checked]:bg-purple-500"
+            className="p-0.5 rounded-md border cursor-pointer text-transparent data-[checked]:text-white data-[checked]:bg-purple-500"
             disabled={disabled}
             color="secondary"
             checked={Boolean(value)}

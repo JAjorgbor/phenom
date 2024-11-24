@@ -40,8 +40,8 @@ const RegisterModal: FC<Props> = ({
           <span className="text-purple-500">Phenome</span> registration
         </p>
         <Link
-          href="https://t.me/earnbigonphenom"
-          target="_blank"
+          // href="https://t.me/earnbigonphenom"
+          href="/register"
           className="bg-purple-500 rounded-xl text-white px-3 py-2 inline-flex justify-center items-center gap-2 flex-1"
         >
           Register
