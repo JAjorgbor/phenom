@@ -9,7 +9,7 @@ import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 
 const RegisterForm = () => {
   const formMethods = useForm();
-  const [step, setStep] = useState(0);
+  const [step, setStep] = useState(1);
   return (
     <Card className="mt-[20%] p-3">
       <div className="flex flex-col gap-3 justify-center items-center">
@@ -26,7 +26,7 @@ const RegisterForm = () => {
         <form className="w-full space-y-4">
           {(() => {
             switch (step) {
-              case 0:
+              case 1:
                 return (
                   <>
                     <InputField
@@ -52,7 +52,7 @@ const RegisterForm = () => {
                     />
                   </>
                 );
-              case 1:
+              case 2:
                 return (
                   <>
                     <InputField
@@ -75,35 +75,11 @@ const RegisterForm = () => {
                       register={formMethods.register("confirmPassword")}
                       placeholder="******"
                     />
-                  </>
-                );
-              case 2:
-                return (
-                  <>
                     <InputField
                       label="Coupon Code"
                       type="text"
                       register={formMethods.register("couponCode")}
                       placeholder="Coupon Code"
-                    />
-                    <InputField
-                      label="Select Package"
-                      type="select"
-                      defaultValue={"pro"}
-                      value={formMethods.watch("package")}
-                      onChange={(value) =>
-                        formMethods.setValue("package", value)
-                      }
-                      options={[
-                        { value: "pro", label: "Pro Package" },
-                        { value: "silver", label: "Silver Package" },
-                      ]}
-                    />
-                    <InputField
-                      label="Reffered by"
-                      type="text"
-                      placeholder="jes23"
-                      register={formMethods.register("confirmPassword")}
                     />
                     <InputField
                       type="checkbox"
@@ -118,7 +94,7 @@ const RegisterForm = () => {
             }
           })()}
           <div className="flex gap-3 ">
-            {step > 0 && (
+            {step > 1 && (
               <button
                 type="button"
                 className="bg-transparent border border-purple-500 rounded-xl text-purple-500 px-3 py-2 inline-flex justify-center items-center gap-2 flex-1 transition-colors hover:bg-purple-500 hover:text-white"
