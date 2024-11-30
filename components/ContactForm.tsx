@@ -77,7 +77,7 @@ const ContactForm = () => {
           register={formMethods.register("phoneNumber")}
         />
         <Link
-          href="https://Wa.me/+2347010138034?text=Hello!%20PHENOM%20OFFICIAL%20I'M%20READY%20TO%20GET%20REGISTERED%20ON%20PHENOM%20"
+          href="https://api.phenomnet.ng/whatsApplink"
           className="bg-transparent border border-purple-500 rounded-xl text-purple-500 px-3 py-2 inline-flex justify-center items-center gap-2 flex-1 transition-colors hover:bg-purple-500 hover:text-white"
         >
           Get Coupon

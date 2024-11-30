@@ -54,7 +54,7 @@ const RegisterModal: FC<Props> = ({
         </p>
         <div className="flex gap-3 justify-center mt-4 text-sm">
           <Link
-            href="https://t.me/Voicemedia2?text=HELLO+OFFICIAL+I+WANT+TO+PURCHASE+PHENOM+COUPON+CODE"
+            href="https://api.phenomnet.ng/Telegramlink"
             className="flex flex-col items-center gap-2 flex-1 group"
           >
             <Image
@@ -67,7 +67,7 @@ const RegisterModal: FC<Props> = ({
             <p className="group-hover:text-purple-500">Telegram</p>
           </Link>
           <Link
-            href="https://Wa.me/+2348104124886?text=Hello!%20Coach%20I'm%20Ready%20To%20Pay%20For%20Phenom%20Registration%20Fee.%20"
+            href="https://api.phenomnet.ng/whatsApplink"
             className="flex flex-col items-center gap-2 flex-1 group"
           >
             <Image

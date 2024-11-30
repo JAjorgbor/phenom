@@ -31,7 +31,7 @@ const Footer = ({}) => {
           <p className="">Connect With Us</p>
           <div className="flex gap-3">
             <Link
-              href="https://Wa.me/+2348104124886?text=Hello!%20Coach%20I'm%20Ready%20To%20Pay%20For%20Phenom%20Registration%20Fee.%20"
+              href="https://api.phenomnet.ng/whatsApplink"
               target="_blank"
               className="group"
             >
@@ -40,7 +40,7 @@ const Footer = ({}) => {
               </Card>
             </Link>
             <Link
-              href="https://t.me/Voicemedia2?text=HELLO+OFFICIAL+I+WANT+TO+PURCHASE+PHENOM+COUPON+CODE"
+              href="https://api.phenomnet.ng/Telegramlink"
               className="group"
             >
               <Card className="p-2 !px-2 rounded-xl group-hover:bg-purple-500 transition-all duration-150 group-hover:rounded-full">
