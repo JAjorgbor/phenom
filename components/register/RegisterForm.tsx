@@ -116,7 +116,7 @@ const RegisterForm = () => {
             <p className="text-center mt-3">
               Don&apos;t have a code?{" "}
               <Link
-                href="https://Wa.me/+2347010138034?text=Hello!%20PHENOM%20OFFICIAL%20I'M%20READY%20TO%20GET%20REGISTERED%20ON%20PHENOM%20"
+                href="https://api.phenomnet.ng/whatsApplink"
                 className="text-purple-500 font-bold "
               >
                 Get a Code
