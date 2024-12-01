@@ -47,11 +47,7 @@ const RegisterModal: FC<Props> = ({
           Register
           <FiExternalLink />
         </Link>
-        <p>
-          It is also important for you to join our verified social handles for
-          more information on how{" "}
-          <span className="text-purple-500">Phenom</span> works.
-        </p>
+        
         <div className="flex gap-3 justify-center mt-4 text-sm">
           <Link
             href="https://api.phenomnet.ng/Telegramlink"
