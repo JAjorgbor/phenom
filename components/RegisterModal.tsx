@@ -36,8 +36,8 @@ const RegisterModal: FC<Props> = ({
         setIsOpen={setExternalIsOpen ? setExternalIsOpen : setIsOpen}
       >
         <p>
-          Message one of our verified agents for your{" "}
-          <span className="text-purple-500">Phenome</span> registration
+          Message one of our verified agents on whatsapp for your{" "}
+          <span className="text-purple-500">Phenom</span> registration
         </p>
         <Link
           // href="https://t.me/earnbigonphenom"
