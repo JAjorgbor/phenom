@@ -36,7 +36,7 @@ const RegisterModal: FC<Props> = ({
         setIsOpen={setExternalIsOpen ? setExternalIsOpen : setIsOpen}
       >
         <p>
-          Message one of our verified agents on telegram for your{" "}
+          Message one of our verified agents for your{" "}
           <span className="text-purple-500">Phenome</span> registration
         </p>
         <Link
@@ -47,9 +47,9 @@ const RegisterModal: FC<Props> = ({
           Register
           <FiExternalLink />
         </Link>
-        
+
         <div className="flex gap-3 justify-center mt-4 text-sm">
-          <Link
+          {/* <Link
             href="https://api.phenomnet.ng/Telegramlink"
             className="flex flex-col items-center gap-2 flex-1 group"
           >
@@ -61,7 +61,7 @@ const RegisterModal: FC<Props> = ({
               className="w-8"
             />
             <p className="group-hover:text-purple-500">Telegram</p>
-          </Link>
+          </Link> */}
           <Link
             href="https://api.phenomnet.ng/whatsApplink"
             className="flex flex-col items-center gap-2 flex-1 group"
